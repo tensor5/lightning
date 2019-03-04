@@ -32,6 +32,13 @@ git clone --recursive https://github.com/jedisct1/libsodium.git external/libsodi
 git clone --recursive https://github.com/ElementsProject/libwally-core.git external/libwally-core
 (cd external/libwally-core && git checkout c51bca3379545e1aaaa78a25cc2b73e589a6ad79)
 
+rm -rf \
+   external/jsmn/.git \
+   external/libbacktrace/.git \
+   external/libbase58/.git \
+   external/libsodium/.git \
+   external/libwally-core/.git
+
 # Move gitignore out of the way so the following adds work
 mv .gitignore .gitignore.bak
 
